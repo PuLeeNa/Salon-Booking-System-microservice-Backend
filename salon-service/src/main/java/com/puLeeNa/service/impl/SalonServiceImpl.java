@@ -1,6 +1,7 @@
 package com.puLeeNa.service.impl;
 
 import com.puLeeNa.modal.Salon;
+import com.puLeeNa.payload.dto.SalonDTO;
 import com.puLeeNa.payload.dto.UserDTO;
 import com.puLeeNa.repository.SalonRepository;
 import com.puLeeNa.service.SalonService;
@@ -16,7 +17,7 @@ public class SalonServiceImpl implements SalonService {
     private final SalonRepository salonRepository;
 
     @Override
-    public Salon createSalon(Salon req, UserDTO user) {
+    public Salon createSalon(SalonDTO req, UserDTO user) {
         Salon salon = new Salon();
         salon.setName(req.getName());
         salon.setAddress(req.getAddress());
@@ -31,7 +32,7 @@ public class SalonServiceImpl implements SalonService {
     }
 
     @Override
-    public Salon updateSalon(Salon salon, UserDTO user, Long salonId) throws Exception {
+    public Salon updateSalon(SalonDTO salon, UserDTO user, Long salonId) throws Exception {
         Salon existingSalon = salonRepository.findById(salonId).orElse(null);
         if (existingSalon != null && existingSalon.getOwnerId().equals(user.getId())) {
             existingSalon.setName(salon.getName());
@@ -43,6 +44,7 @@ public class SalonServiceImpl implements SalonService {
             existingSalon.setOpenTime(salon.getOpenTime());
             existingSalon.setCloseTime(salon.getCloseTime());
             existingSalon.setOwnerId(user.getId());
+            return salonRepository.save(existingSalon);
         }
         throw new Exception("salon not found or unauthorized");
     }
