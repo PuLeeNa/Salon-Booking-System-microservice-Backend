@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9c405d3-c9c6-4c84-978d-f483a89d3d67" name="Changes" comment="Add booking service implementation; create Booking, BookingStatus, and related DTOs">
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/repository/BookingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/service/impl/BookingServiceImpl.java" afterDir="false" />
+    <list default="true" id="c9c405d3-c9c6-4c84-978d-f483a89d3d67" name="Changes" comment="Add BookingRepository and BookingServiceImpl; implement booking creation and retrieval logic">
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/controller/BookingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/dto/BookingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/dto/BookingSlotDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/mapper/BookingMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/service/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/service/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/service/impl/BookingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/puLeeNa/service/impl/BookingServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +70,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.BookingServiceApplication.executor": "Run",
@@ -159,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769251102870</updated>
       <workItem from="1769251109457" duration="6093000" />
-      <workItem from="1770630382016" duration="7812000" />
+      <workItem from="1770630382016" duration="17878000" />
     </task>
     <task id="LOCAL-00001" summary="Add booking service implementation; create Booking, BookingStatus, and related DTOs">
       <option name="closed" value="true" />
@@ -169,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770633253910</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add BookingRepository and BookingServiceImpl; implement booking creation and retrieval logic">
+      <option name="closed" value="true" />
+      <created>1770734652461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770734652461</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,7 +189,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add booking service implementation; create Booking, BookingStatus, and related DTOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add booking service implementation; create Booking, BookingStatus, and related DTOs" />
+    <MESSAGE value="Add BookingRepository and BookingServiceImpl; implement booking creation and retrieval logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add BookingRepository and BookingServiceImpl; implement booking creation and retrieval logic" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

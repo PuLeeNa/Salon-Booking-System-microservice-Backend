@@ -25,13 +25,13 @@ public class BookingServiceImpl implements BookingService {
     private final BookingRepository bookingRepository;
 
     @Override
-    public Booking createBooking(BookingRequest booking, UserDTO user, SalonDTO salon, Set<ServiceDTO> serviceDTOSet) {
+    public Booking createBooking(BookingRequest booking, UserDTO user, SalonDTO salon, Set<ServiceDTO> serviceDTOSet) throws Exception {
         int totalDuration = serviceDTOSet.stream().mapToInt(ServiceDTO::getDuration).sum();
 
         LocalDateTime bookingStartTime = booking.getStartTime();
         LocalDateTime bookingEndTime = bookingStartTime.plusMinutes(totalDuration);
 
-        try {
+
             if (isTimeSlotAvailable(salon, bookingStartTime, bookingEndTime)) {
                 Booking newBooking = new Booking();
                 newBooking.setCustomerId(user.getId());
@@ -44,9 +44,6 @@ public class BookingServiceImpl implements BookingService {
 
                 return bookingRepository.save(newBooking);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         return null;
     }
 
