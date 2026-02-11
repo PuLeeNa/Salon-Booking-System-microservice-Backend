@@ -4,11 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58a61587-e56c-4a81-a9d8-ce86aa3ea45f" name="Changes" comment="Add payment service implementation; create PaymentOrder, PaymentMethod, and related DTOs">
-      <change afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/puLeeNa/controller/PaymentController.java" afterDir="false" />
+    <list default="true" id="58a61587-e56c-4a81-a9d8-ce86aa3ea45f" name="Changes" comment="Add README.md; provide project overview, architecture details, and setup instructions">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/puLeeNa/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/puLeeNa/service/PaymentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment-service/src/main/java/com/puLeeNa/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/java/com/puLeeNa/service/impl/PaymentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salon-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/salon-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-offering/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-offering/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-offering/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,12 @@
     <persistenceIdMap>
       <entry key="_C:/26/Microservice project/Salon booking/backend (microservices)" value="39VVgR2y2MSH2uZcnC2ymas0c31" />
     </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Claude Sonnet 4.5" />
+      <entry key="agent-panel" value="Claude Sonnet 4.5" />
+    </selectedModels>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,10 +62,10 @@
     &quot;accountId&quot;: &quot;3c24a66f-b5b6-4672-b2cf-080293517173&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 1
@@ -63,8 +81,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.BookingServiceApplication.executor": "Run",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.PaymentServiceApplication.executor": "Run",
     "Spring Boot.SalonServiceApplication.executor": "Run",
     "git-widget-placeholder": "main",
@@ -107,7 +132,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PaymentServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="BookingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="booking-service" />
@@ -120,6 +145,13 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="category-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.puLeeNa.CategoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.puLeeNa.EurekaServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,6 +180,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.puLeeNa.user.service.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -165,7 +205,8 @@
       <option name="presentableId" value="Default" />
       <updated>1770781336874</updated>
       <workItem from="1770781339402" duration="243000" />
-      <workItem from="1770781908593" duration="9951000" />
+      <workItem from="1770781908593" duration="12048000" />
+      <workItem from="1770803823052" duration="3300000" />
     </task>
     <task id="LOCAL-00001" summary="Add payment service implementation; create PaymentOrder, PaymentMethod, and related DTOs">
       <option name="closed" value="true" />
@@ -175,7 +216,23 @@
       <option name="project" value="LOCAL" />
       <updated>1770790223345</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add PaymentController; implement endpoints for creating payment links and retrieving payment orders">
+      <option name="closed" value="true" />
+      <created>1770792193340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770792193340</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add README.md; provide project overview, architecture details, and setup instructions">
+      <option name="closed" value="true" />
+      <created>1770802276967</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1770802276967</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,7 +240,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add payment service implementation; create PaymentOrder, PaymentMethod, and related DTOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add payment service implementation; create PaymentOrder, PaymentMethod, and related DTOs" />
+    <MESSAGE value="Add PaymentController; implement endpoints for creating payment links and retrieving payment orders" />
+    <MESSAGE value="Add README.md; provide project overview, architecture details, and setup instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md; provide project overview, architecture details, and setup instructions" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
