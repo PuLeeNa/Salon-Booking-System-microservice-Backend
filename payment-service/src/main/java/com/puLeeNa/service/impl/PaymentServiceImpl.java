@@ -1,6 +1,7 @@
 package com.puLeeNa.service.impl;
 
 import com.puLeeNa.domain.PaymentMethod;
+import com.puLeeNa.domain.PaymentOrderStatus;
 import com.puLeeNa.modal.PaymentOrder;
 import com.puLeeNa.payload.dto.BookingDTO;
 import com.puLeeNa.payload.dto.UserDTO;
@@ -90,5 +91,17 @@ public class PaymentServiceImpl implements PaymentService {
         Session session = Session.create(params);
 
         return session.getUrl();
+    }
+
+    @Override
+    public Boolean proceedPayment(PaymentOrder paymentOrder, String paymentId, String paymentLinkId) {
+        if(paymentOrder.getStatus().equals(PaymentOrderStatus.PENDING)){
+            if(paymentOrder.getPaymentMethod().equals(PaymentMethod.STRIPE)){
+                paymentOrder.setStatus(PaymentOrderStatus.SUCCESS);
+                paymentOrderRepository.save(paymentOrder);
+                return true;
+            }
+        }
+        return false;
     }
 }
